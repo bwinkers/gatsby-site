@@ -1,13 +1,15 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import '@react-website-themes/default/styles/variables';
-import '@react-website-themes/default/styles/global';
+import CalendarIcon from 'react-feather/dist/icons/calendar';
+import UserIcon from 'react-feather/dist/icons/user';
+import TagIcon from 'react-feather/dist/icons/tag';
 
+import Article from '@react-website-themes/default/components/Article';
 import Branding from '@react-website-themes/default/components/Branding';
 import Footer from '@react-website-themes/default/components/Footer';
 import Header from '@react-website-themes/default/components/Header';
-import Hero from '@react-website-themes/default/components/Hero';
+import Blog from '@react-website-themes/default/components/Blog';
 import Layout from '@react-website-themes/default/components/Layout';
 import Menu from '@react-website-themes/default/components/Menu';
 import Seo from '@react-website-themes/default/components/Seo';
@@ -15,14 +17,22 @@ import Seo from '@react-website-themes/default/components/Seo';
 import config from 'content/meta/config';
 import menuItems from 'content/meta/menu';
 
-const IndexPage = props => {
+const metaIcons = {
+  calendar: CalendarIcon,
+  user: UserIcon,
+  tag: TagIcon,
+};
+
+const BlogPage = props => {
   const {
     data: {
+      posts: { edges },
       footerLinks: { html: footerLinksHTML },
-      hero: { html: heroHTML },
       copyright: { html: copyrightHTML },
     },
   } = props;
+
+  const posts = edges.map(edge => edge.node);
 
   const {
     headerTitle,
@@ -39,7 +49,9 @@ const IndexPage = props => {
         <Branding title={headerTitle} subTitle={headerSubTitle} />
         <Menu items={menuItems} />
       </Header>
-      <Hero html={heroHTML} />
+      <Article>
+        <Blog items={posts} author={'greg'} metaIcons={metaIcons} />
+      </Article>
       <Footer links={footerLinksHTML} copyright={copyrightHTML} />
       <Seo
         url={siteUrl}
@@ -51,12 +63,27 @@ const IndexPage = props => {
   );
 };
 
-export default IndexPage;
+export default BlogPage;
 
 export const query = graphql`
   query {
-    hero: markdownRemark(fileAbsolutePath: { regex: "/content/parts/hero/" }) {
-      html
+    posts: allMarkdownRemark(
+      filter: { fields: { source: { eq: "posts" }, slug: { ne: null } } }
+      sort: { fields: [fields___prefix], order: DESC }
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 250)
+          fields {
+            slug
+            prefix
+          }
+          frontmatter {
+            title
+            categories
+          }
+        }
+      }
     }
     footerLinks: markdownRemark(
       fileAbsolutePath: { regex: "/content/parts/footerLinks/" }
