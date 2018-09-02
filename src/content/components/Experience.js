@@ -18,7 +18,6 @@ var _experience = _interopRequireDefault(require("../../styles/experience"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Experience = function Experience(props) {
-  console.log(props.items);
   var items = props.items,
       _props$themeStyle = props.themeStyle,
       themeStyle = _props$themeStyle === void 0 ? _experience.default : _props$themeStyle,
