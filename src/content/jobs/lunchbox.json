@@ -1,0 +1,28 @@
+{
+  "name": "Lunchbox",
+  "location": "Los Angeles, CA",
+  "site": "firestart.me",
+  "dates": {
+    "start": "2014-10-01",
+    "end": "2015-12-01"
+  },
+  "title": "Node Backend Developer",
+  "slug": "lunchbox",
+  "stack" : {
+    "programming": ["Node","Javascript","ES5","Promises"],
+    "testing": ["Mocha","Postman"],
+    "data": ["Mongo"],
+    "deployment": ["Jenkins","AWS"],
+    "tools": ["AWS","Slack","Hangouts","Jira"],
+    "ecommerce": ["Braintree","PayPal"],
+    "network": ["Load Balancer","Autoscaling Groups","Bastion","VPC","Route 53","S3","CloudFront"],
+    "operatingSystem": ["Ubuntu","Cloud"]
+  },
+  "accomplishments": [
+    "Finished the API project ontime by myself after my manager moved on."
+  ],
+  "learnings": [
+    "I enjoyed learning Promised based Javascript development as I went, it had been a while since I had to do that."
+  ],
+  "reasonLeft": "My manager at Lunchbox left to manage at The Bouqs Co. and hired me away."
+}

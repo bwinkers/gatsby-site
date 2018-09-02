@@ -2,4 +2,4 @@
 name: notFound
 ---
 
-Quisque lacus augue, mollis non mollis et, ullamcorper in purus. Morbi et sem orci.
+Sorry, there is nothing here to see.

@@ -1,10 +1,32 @@
 {
-  "name": "The Bouqs Co",
+  "name": "The Bouqs Co.",
+  "location": "Marina del Rey, CA",
   "site": "bouqs.com",
   "dates": {
-    "start": "2018-01-01",
-    "end": "2019-02-04"
+    "start": "2016-01-01",
+    "end": "2018-09-04"
   },
   "title": "Senior Software Engineer",
-  "slug": "bouqs"
+  "slug": "bouqs",
+  "stack" : {
+    "programming": ["Node","PHP","Javascript","ES6","React","Yii"],
+    "testing": ["Mocha","Postman","Jest","Jenkins","CI"],
+    "data": ["Aurora","MySQL","JSON","SQL Proxy"],
+    "deployment": ["Jenkins","Beanstalk","Docker","Git Flow"],
+    "tools": ["AWS","Slack","Zoom","Confluence","Redmine","Github","Swagger","Open API"],
+    "ecommerce": ["Prestahsop","Weblinc","Braintree","PayPal"],
+    "network": ["Load Balancer","Autoscaling Groups","Bastion","VPC","Route 53","S3","CloudFront", "Apache","Nginx"],
+    "operatingSystem": ["Ubuntu","Debian","RightScale","Alpine Linux","Cloud"]
+  },
+  "accomplishments": [
+    "The API's I wrote and supported saw 100% growth in year.",
+    "Managed 5 major API replatformings.",
+    "Implemented 90%+ test coverage in new code."
+  ],
+  "learnings": [
+    "I improved at adapting quickly to changes in plans and process.",
+    "I was able to hone my AWS automation and deployment skills.",
+    "My belief that technology should be involved in the product development process was affirmed."
+  ],
+  "reasonLeft": "My PHP/Node development position was eliminated as the company moved to Ruby on Rails."
 }

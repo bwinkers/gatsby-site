@@ -1,0 +1,31 @@
+{
+  "name": "Trek Bicycle Company",
+  "location": "Waterloo, WI",
+  "site": "trekbikes.com",
+  "dates": {
+    "start": "2007-08-01",
+    "end": "2013-10-01"
+  },
+  "title": "Web Technologies Architect",
+  "slug": "trek",
+  "stack" : {
+    "programming": ["PHP","Javascript","jQuery","Kohana","Code Ignitor"],
+    "testing": ["Cucumber","Postman","Behat"],
+    "data": ["MySQL","JSON","Oracle","DB2"],
+    "deployment": ["Jenkins","Shell Scripts","Git"],
+    "tools": ["AWS","IRC","Skype"],
+    "ecommerce": ["Joomla"],
+    "network": ["Load Balancer","Lightspeed CDN","Adobe Cloud9"],
+    "operatingSystem": ["Redhat","CentOS"]
+  },
+  "accomplishments": [
+    "The framework I developed easily handled going for 5 to 30 localized contexts.",
+    "The shipping management software I designed went 7 years without needing significant attention."
+  ],
+  "learnings": [
+    "I learned a lot about supporting software 'over time'. Things that seem to speed development now may slow it later.",
+    "My first exposure to handling real spikes was during the Tour de France airings.",
+    "I learned how to develop SMS applications."
+  ],
+  "reasonLeft": "Things were too smooth, I had grown bored. I wanted to help a startup grow into something amazing."
+}

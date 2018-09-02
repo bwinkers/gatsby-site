@@ -45,12 +45,19 @@ const nextPrevIcons = {
 };
 
 const JobTemplate = props => {
+ console.log(props.pageContext)
+ 
   const {
-      title,
-      name,
-      pageContext: { next, prev },
+      pageContext: { name,
+        title,
+        site,
+        dates,
+        next,
+        prev 
+      },
       slug
   } = props;
+
 
   const {
     headerTitle,
@@ -68,6 +75,7 @@ const JobTemplate = props => {
         <Menu items={menuItems} />
       </Header> 
       <Article>
+      <div>Hello blog post</div>
         <Heading title={title} />
         <Bodytext html={name} />
         <NextPrev next={next} prev={prev} icons={nextPrevIcons} />

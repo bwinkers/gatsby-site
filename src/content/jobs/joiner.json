@@ -1,0 +1,31 @@
+{
+  "name": "Joiner Associates, Inc",
+  "location": "Madison, WI",
+  "site": "gdinet.com",
+  "dates": {
+    "start": "1994-06-01",
+    "end": "1998-09-01"
+  },
+  "title": "Webmaster & Network Technician",
+  "slug": "joiner",
+  "stack" : {
+    "programming": ["HTML"],
+    "testing": ["curl"],
+    "data": ["DB2"],
+    "deployment": ["Subversion","Shell"],
+    "tools": ["IRC"],
+    "ecommerce": ["iChains"],
+    "network": ["Netware"],
+    "operatingSystem": ["Windows NT","Netware","OS/2"]
+  },
+  "accomplishments": [
+    "I used pricing and plans to double hosting revenue.",
+    "I delivered SEO and traffic analysis seminars to web developers.",
+    "I wrote three major online apps for the company while still working in marketing."
+  ],
+  "learnings": [
+    "How to move at Internet time.",
+    "Good software can be written quickly."
+  ],
+  "reasonLeft": "I left for a development-centric role with twice the pay of my marketing job."
+}

@@ -1,10 +1,29 @@
 {
-  "name": "The Art Commission",
+  "name": "The Art Commision",
+  "location": "Madison, WI",
   "site": "codaworx.com",
   "dates": {
-    "start": "2017-01-01",
-    "end": "2018-02-04"
+    "start": "2013-10-01",
+    "end": "2014-11-01"
   },
-  "title": "Director of Software Development",
-  "slug": "codaworx"
+  "title": "Director of IT",
+  "slug": "codaworx",
+  "stack" : {
+    "programming": ["PHP","Javascript","jQuery","Bootstrap","Backbone","Zend Framework"],
+    "testing": ["Mocha","Postman"],
+    "data": ["MySQL","MariaDB"],
+    "deployment": ["Jenkins","Bit Bucket"],
+    "tools": ["Cloudinary"],
+    "ecommerce": ["Recurly"],
+    "network": ["Apache"],
+    "operatingSystem": ["Ubuntu","Debian"]
+  },
+  "accomplishments": [
+    "I brought hundreds of outstanding requests down to a manageable level.",
+    "I helped launch the first CODAVideo Awards."
+  ],
+  "learnings": [
+    "I learned the hardships of a small startup dependent upon continued funding."
+  ],
+  "reasonLeft": "The company was late in getting their next round of funding and had to cut everyone's pay in half. I had just gotten married and bought a house so I had to move on."
 }

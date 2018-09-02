@@ -1,0 +1,29 @@
+{
+  "name": "Global Dialog Internet",
+  "location": "Madison, WI",
+  "site": "gdinet.com",
+  "dates": {
+    "start": "2002-02-01",
+    "end": "2003-05-01"
+  },
+  "title": "Software Development Manager",
+  "slug": "gdi",
+  "stack" : {
+    "programming": ["PHP","Coldfusion","ASP","Shell","Python","Perl"],
+    "testing": ["curl"],
+    "data": ["MySQL","SQL Server","PostgreSQL"],
+    "deployment": ["Shell scripts"],
+    "tools": ["IRC"],
+    "ecommerce": ["ACH","Credit Card Gateway"],
+    "network": ["Apache","IIS"],
+    "operatingSystem": ["BSDI","Windows NT","Windows 2000"]
+  },
+  "accomplishments": [
+    "Rewrote three major applications in a eight month period."
+  ],
+  "learnings": [
+    "I became adept at managing remote teams.",
+    "I learned the importance of all management having the same vision."
+  ],
+  "reasonLeft": "The owner sold the business to start a dairy farm."
+}

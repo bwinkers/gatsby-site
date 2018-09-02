@@ -1,0 +1,30 @@
+{
+  "name": "WHEDA",
+  "location": "Madison, WI",
+  "site": "wheda.com",
+  "dates": {
+    "start": "2000-12-01",
+    "end": "2002-01-01"
+  },
+  "title": "Web Analyst",
+  "slug": "wheda",
+  "stack" : {
+    "programming": ["HTML","ASP","Notepad","Visual Studio"],
+    "testing": ["curl"],
+    "data": ["DB2"],
+    "deployment": ["Subversion","Shell"],
+    "tools": ["IRC"],
+    "ecommerce": ["iChains"],
+    "network": ["Netware"],
+    "operatingSystem": ["Windows NT","Netware","OS/2"]
+  },
+  "accomplishments": [
+    "I was able to get the WHEDA iChains implementation up in less than a year, other state agencies were on their second and third years for similar projects.",
+    "The WHEDA iChains implentation became a model for other agencies."
+  ],
+  "learnings": [
+    "This was my first exposure to working in a government bureaucracy, I discovered it wasn't to my liking. ",
+    "I discovered I didn't have to write the software for things to progress quickly."
+  ],
+  "reasonLeft": "I left for a development-centric role with twice the pay of my marketing job."
+}

@@ -1,0 +1,30 @@
+{
+  "name": "TDS",
+  "location": "Madison, WI",
+  "site": "tdstelecom.com",
+  "dates": {
+    "start": "2003-05-01",
+    "end": "2007-08-01"
+  },
+  "title": "PHP/Perl Developer",
+  "slug": "tds",
+  "stack" : {
+    "programming": ["PHP","Perl"],
+    "testing": ["PHPUnit"],
+    "data": ["Oracle"],
+    "deployment": ["Shell scripts"],
+    "tools": ["IRC"],
+    "ecommerce": ["UPS WorldShip"],
+    "network": ["Apache"],
+    "operatingSystem": ["Redhat","Solaris"]
+  },
+  "accomplishments": [
+    "Developed a USP Worldship integration in 3 weeks by myself, the Java team took  3 months.",
+    "Designed and wrote a mass mail application in Perl."
+  ],
+  "learnings": [
+    "I picked up a number of good code review habits.",
+    "Corporate cubible life is soul sucking."
+  ],
+  "reasonLeft": "I needed to feel better connected to the product I was supporting."
+}

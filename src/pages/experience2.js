@@ -6,7 +6,6 @@ import UserIcon from 'react-feather/dist/icons/user';
 import TagIcon from 'react-feather/dist/icons/tag';
 
 import Article from '@react-website-themes/default/components/Article';
-import Experience from 'content/components/Experience';
 import Branding from '@react-website-themes/default/components/Branding';
 import Footer from '@react-website-themes/default/components/Footer';
 import Header from '@react-website-themes/default/components/Header';
@@ -49,7 +48,7 @@ const ExperiencePage = props => {
         <Menu items={menuItems} />
       </Header>
       <Article>
-        <Experience items={experiences} />
+        <Blog items={experiences} metaIcons={metaIcons} />
       </Article>
       <Footer links={footerLinksHTML} copyright={copyrightHTML} />
       <Seo
@@ -66,17 +65,21 @@ export default ExperiencePage;
 
 export const query = graphql`
   query {
-    experiences: allJobsJson {
+    experiences: allMarkdownRemark(
+      filter: { fields: { source: { eq: "experiences" }, slug: { ne: null } } }
+      sort: { fields: [fields___prefix], order: DESC }
+    ) {
       edges {
-        node  {
-          site
-          slug
-          name
-          dates {
-            start
-            end
+        node {
+          excerpt(pruneLength: 250)
+          fields {
+            slug
+            prefix
           }
-          title
+          frontmatter {
+            title
+            categories
+          }
         }
       }
     }
