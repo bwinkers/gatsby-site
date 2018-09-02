@@ -56,8 +56,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
-    const postTemplate = path.resolve('./src/templates/PostTemplate.js');
-    const jobTemplate = path.resolve('./src/templates/JobTemplate.js');
+    //const jobTemplate = path.resolve('./src/templates/JobTemplate.js');
     const pageTemplate = path.resolve('./src/templates/PageTemplate.js');
     const experienceTemplate = path.resolve('./src/templates/ExperienceTemplate.js');
     const categoryTemplate = path.resolve(
@@ -124,25 +123,6 @@ exports.createPages = ({ graphql, actions }) => {
                 component: categoryTemplate,
                 context: {
                   category,
-                },
-              });
-            });
-
-            // Create posts
-            const posts = items.filter(item => item.node.fields.source === 'posts');
-            posts.forEach(({ node }, index) => {
-              const slug = node.fields.slug;
-              const next = index === 0 ? undefined : posts[index - 1].node;
-              const prev =
-                index === posts.length - 1 ? undefined : posts[index + 1].node;
-
-              createPage({
-                path: slug,
-                component: postTemplate,
-                context: {
-                  slug,
-                  prev,
-                  next,
                 },
               });
             });
@@ -232,7 +212,7 @@ exports.createPages = ({ graphql, actions }) => {
 
               createPage({
                 path: slug,
-                component: jobTemplate,
+                component: experienceTemplate,
                 context
               });
             });
