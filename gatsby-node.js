@@ -56,12 +56,8 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
-    //const jobTemplate = path.resolve('./src/templates/JobTemplate.js');
     const pageTemplate = path.resolve('./src/templates/PageTemplate.js');
     const experienceTemplate = path.resolve('./src/templates/ExperienceTemplate.js');
-    const categoryTemplate = path.resolve(
-      './src/templates/CategoryTemplate.js'
-    );
 
     resolve(
       
@@ -98,54 +94,6 @@ exports.createPages = ({ graphql, actions }) => {
 
             const items = result.data.allMarkdownRemark.edges;
 
-            const categorySet = new Set();
-
-            // Create category list
-            items.forEach(edge => {
-              const {
-                node: {
-                  frontmatter: { categories },
-                },
-              } = edge;
-
-              if (categories) {
-                categories.forEach(category => {
-                  categorySet.add(category);
-                });
-              }
-            });
-
-            // Create category pages
-            const categoryList = Array.from(categorySet);
-            categoryList.forEach(category => {
-              createPage({
-                path: `/categories/${_.kebabCase(category)}/`,
-                component: categoryTemplate,
-                context: {
-                  category,
-                },
-              });
-            });
-
-            // Create Experiences
-            const experiences = items.filter(item => item.node.fields.source === 'experiences');
-            experiences.forEach(({ node }, index) => {
-              const slug = node.fields.slug;
-              const next = index === 0 ? undefined : experiences[index - 1].node;
-              const prev =
-                index === experiences.length - 1 ? undefined : experiences[index + 1].node;
-
-              createPage({
-                path: slug,
-                component: experienceTemplate,
-                context: {
-                  slug,
-                  prev,
-                  next,
-                },
-              });
-            });
-
             // create pages
             const pages = items.filter(item => item.node.fields.source === 'pages');
             pages.forEach(({ node }) => {
@@ -173,6 +121,12 @@ exports.createPages = ({ graphql, actions }) => {
                     site
                     slug
                     name
+                    description
+                    responsibilities
+                    accomplishments
+                    learnings
+                    reasonLeft
+                    stack { network }
                     dates {
                       start
                       end
@@ -189,23 +143,39 @@ exports.createPages = ({ graphql, actions }) => {
               reject(result.errors);
             }
 
-            const jobs = result.data.allJobsJson.edges;
+            const experiences = result.data.allJobsJson.edges;
 
             // Create Job Pages
-            jobs.forEach(({ node }, index) => {
+            experiences.forEach(({ node }, index) => {
               const slug = '/experience/' + node.slug;
               const name = node.name;
               const site = node.site;
               const title = node.title;
-              const next = index === 0 ? undefined : jobs[index - 1].node;
+              const description = node.description;
+              const responsibilities = node.responsibilities;
+              const accomplishments = node.accomplishments;
+              const learnings = node.learnings;
+              const reasonLeft = node.reasonLeft;
+              const start = node.dates.start;
+              const end = node.dates.end;
+              const stack = node.stack;
+              const next = index === 0 ? undefined : experiences[index - 1].node;
               const prev =
-                index === jobs.length - 1 ? undefined : jobs[index + 1].node;
+                index === experiences.length - 1 ? undefined : experiences[index + 1].node;
               
               const context = {
                   slug,
                   name,
                   site,
                   title,
+                  description,
+                  responsibilities,
+                  accomplishments,
+                  learnings,
+                  reasonLeft,
+                  stack,
+                  start,
+                  end,
                   prev,
                   next
                 }
