@@ -13,7 +13,7 @@ var _gatsby = require("gatsby");
 
 var _emotion = require("emotion");
 
-var _experience = _interopRequireDefault(require("../../styles/experience"));
+var _experience = _interopRequireDefault(require("../styles/experience"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26,11 +26,13 @@ var Experience = function Experience(props) {
   return _react.default.createElement("div", {
     className: (0, _emotion.cx)(themeStyle, customStyle)
   }, _react.default.createElement("ul", null, items.map(function (item) {
+      console.log(item)
     return _react.default.createElement("li", {
       key: item.slug
     }, _react.default.createElement(_gatsby.Link, {
       to: '/experience/' + item.slug
-    }, _react.default.createElement("h3", null, item.title), _react.default.createElement("p", null, 'excerpt')));
+    }, _react.default.createElement("h3", null, item.title)
+     , _react.default.createElement("p", null, item.start)));
   })));
 };
 

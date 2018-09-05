@@ -9,37 +9,31 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _react = _interopRequireDefault(require("react"));
 
+var _moment = require("moment");
+
 var _gatsby = require("gatsby");
 
 var _emotion = require("emotion");
 
-var _experience = _interopRequireDefault(require("../../styles/experience"));
+var _experience = _interopRequireDefault(require("../styles/stack"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Experience = function Experience(props) {
-  var items = props.items,
-      _props$themeStyle = props.themeStyle,
+var Stack = function Stack(props) {
+  var _props$themeStyle = props.themeStyle,
       themeStyle = _props$themeStyle === void 0 ? _experience.default : _props$themeStyle,
       _props$customStyle = props.customStyle,
       customStyle = _props$customStyle === void 0 ? '' : _props$customStyle;
+
+  var stuff = '<b>hello</b>';
   return _react.default.createElement("div", {
     className: (0, _emotion.cx)(themeStyle, customStyle)
-  }, _react.default.createElement("ul", null, items.map(function (item) {
-    return _react.default.createElement("li", {
-      key: item.slug
-    }, _react.default.createElement(_gatsby.Link, {
-      to: '/experience/' + item.slug
-    }, _react.default.createElement("h3", null, item.title), _react.default.createElement("p", null, 'excerpt')));
-  })));
+  }, stuff);
 };
 
-Experience.propTypes = {
-  items: _propTypes.default.array.isRequired,
-  author: _propTypes.default.string,
+Stack.propTypes = {
   themeStyle: _propTypes.default.string,
-  customStyle: _propTypes.default.string,
-  metaIcons: _propTypes.default.object
+  customStyle: _propTypes.default.string
 };
-var _default = Experience;
+var _default = Stack;
 exports.default = _default;
