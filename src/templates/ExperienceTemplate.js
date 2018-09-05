@@ -15,7 +15,7 @@ import Bodytext from '@react-website-themes/default/components/Bodytext';
 import Comments from '@react-website-themes/default/components/Comments';
 import Footer from '@react-website-themes/default/components/Footer';
 import Header from '@react-website-themes/default/components/Header';
-import Heading from '@react-website-themes/default/components/Heading';
+//import Heading from '@react-website-themes/default/components/Heading';
 import Layout from '@react-website-themes/default/components/Layout';
 import Menu from '@react-website-themes/default/components/Menu';
 import Meta from '@react-website-themes/default/components/Meta';
@@ -25,6 +25,11 @@ import Share from '@react-website-themes/default/components/Share';
 
 import config from 'content/meta/config';
 import menuItems from 'content/meta/menu';
+import Heading from 'components/Heading';
+import SubHeading from 'components/SubHeading';
+import EmploymentDates from 'components/EmploymentDates';
+import Description from 'components/Description';
+import Stack from 'components/Stack';
 
 import CalendarIcon from 'react-feather/dist/icons/calendar';
 import UserIcon from 'react-feather/dist/icons/user';
@@ -48,16 +53,20 @@ const ExperienceTemplate = props => {
  console.log(props.pageContext)
  
   const {
-      pageContext: { name,
+      pageContext: { 
+        name,
         title,
         site,
-        dates,
+        start,
+        end,
+        description,
+        responsibilities,
+        stack,
         next,
         prev 
       },
       slug
   } = props;
-
 
   const {
     headerTitle,
@@ -67,7 +76,7 @@ const ExperienceTemplate = props => {
     siteLanguage,
     siteTitlePostfix,
   } = config;
-
+console.log(stack)
   return (
     <Layout>
       <Header>
@@ -75,16 +84,14 @@ const ExperienceTemplate = props => {
         <Menu items={menuItems} />
       </Header> 
       <Article>
-      <div>Hello blog post</div>
         <Heading title={title} />
-        <Bodytext html={name} />
+        <SubHeading name={name} />
+        <EmploymentDates start={start} end={end} />
+        <Description description={description} />
+        <Responsibilities responsibilities={responsibilities} />
+        <Stack stack={stack} />
         <NextPrev next={next} prev={prev} icons={nextPrevIcons} />
       </Article>
-      <Seo
-        url={`${siteUrl}${slug}`}
-        language={siteLanguage}
-        title={`${title}${siteTitlePostfix}`}
-      />
     </Layout>
   );
 };
