@@ -19,6 +19,6 @@ function _templateObject() {
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var experienceStyle = (0, _emotion.css)(_templateObject());
-var _default = experienceStyle;
+var stackStyle = (0, _emotion.css)(_templateObject());
+var _default = stackStyle;
 exports.default = _default;
