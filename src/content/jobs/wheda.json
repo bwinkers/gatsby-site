@@ -18,13 +18,21 @@
     "network": ["Netware"],
     "operatingSystem": ["Windows NT","Netware","OS/2"]
   },
+  "description": "Led all web related projects. Defined the process for defining and managing web application development.",
+  "responsibilities": [
+    "Provide direction for all web projects.",
+    "Create process for defining and tracking software projects.",
+    "Advise on Internet and Web security issues.",
+    "Act as a liason with other state agency tech departments implementing iChains."
+  ],
   "accomplishments": [
     "I was able to get the WHEDA iChains implementation up in less than a year, other state agencies were on their second and third years for similar projects.",
     "The WHEDA iChains implentation became a model for other agencies."
   ],
   "learnings": [
     "This was my first exposure to working in a government bureaucracy, I discovered it wasn't to my liking. ",
-    "I discovered I didn't have to write the software for things to progress quickly."
+    "I discovered I didn't have to write the software for things to progress quickly.",
+    "Led an ASP.net developer team even though I had never written anything in ASP.net."
   ],
   "reasonLeft": "I left for a development-centric role with twice the pay of my marketing job."
 }

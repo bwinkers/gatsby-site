@@ -14,14 +14,25 @@
     "data": ["Aurora","MySQL","JSON","SQL Proxy"],
     "deployment": ["Jenkins","Beanstalk","Docker","Git Flow"],
     "tools": ["AWS","Slack","Zoom","Confluence","Redmine","Github","Swagger","Open API"],
-    "ecommerce": ["Prestahsop","Weblinc","Braintree","PayPal"],
-    "network": ["Load Balancer","Autoscaling Groups","Bastion","VPC","Route 53","S3","CloudFront", "Apache","Nginx"],
+    "ecommerce": ["Prestashop","Weblinc","Braintree","PayPal"],
+    "network": ["Load Balancer","Autoscaling Groups","IAM", "Docker", "Bastion","VPC","Route 53","S3","CloudFront", "Apache","Nginx"],
     "operatingSystem": ["Ubuntu","Debian","RightScale","Alpine Linux","Cloud"]
   },
+  "description": "Remote PHP and Node API development. Creating AWS based automated testing and deployment systems.",
+  "responsibilities": [
+    "Define API endpoints and architecture.",
+    "Identify security requirements for API and backend services.",
+    "Automating the testing and deploy process.",
+    "Wordpress blog support.",
+    "Implementing performance monitoring, reporting and and alerting.",
+    "Review developers' code for architecture, security and standards.",
+    "AWS systems architecture, implementation and troubleshooting."
+  ],
   "accomplishments": [
-    "The API's I wrote and supported saw 100% growth in year.",
+    "Refactored an ES6 async/await application while learning ES6.",
+    "Created a PHP API rooted in Swaggwer that wrapped and stabilized the existing ecommerce platform through its largest growth.",
     "Managed 5 major API replatformings.",
-    "Implemented 90%+ test coverage in new code."
+    "Implemented 90%+ test coverage in new code using Mocha, Jest and Postman."
   ],
   "learnings": [
     "I improved at adapting quickly to changes in plans and process.",

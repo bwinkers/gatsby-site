@@ -18,9 +18,16 @@
     "network": ["Apache"],
     "operatingSystem": ["Redhat","Solaris"]
   },
+  "description": "Sole developer on the PHP version of the DSL order form Perl mass mail application. ",
+  "responsibilities": [
+    "Provide all support for a DSL order process written in PHP.",
+    "Managing a mass mail scheduler I wrote in Perl.",
+    "Worldship integration support for shipping DSL modems and parts.",
+    "Collecting business requirements for PHP and Perl software."
+  ],
   "accomplishments": [
     "Developed a USP Worldship integration in 3 weeks by myself, the Java team took  3 months.",
-    "Designed and wrote a mass mail application in Perl."
+    "Designed and wrote a mass mail application in Perl that combined UI, API and a complex scheduler.s"
   ],
   "learnings": [
     "I picked up a number of good code review habits.",

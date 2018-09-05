@@ -18,9 +18,17 @@
     "network": ["Apache"],
     "operatingSystem": ["Ubuntu","Debian"]
   },
+  "description": "Managed the direction of the technology stack and the developers. This was a 25% remote, hands-on roll where I was involved daily with development and technical tasks.",
+  "responsibilities": [
+    "Defining network architecture and cloud implementation.",
+    "Interfacing with the business and marketing units to define requirements.",
+    "Directing the efforts and prioritizations of the developers.",
+    "Implementing agile practices and planning to enhance the development flow."
+  ],
   "accomplishments": [
-    "I brought hundreds of outstanding requests down to a manageable level.",
-    "I helped launch the first CODAVideo Awards."
+    "I helped launch the first CODAVideo Awards.",
+    "I was invovled in a developing the deck and even was able to pitch to investors.",
+    "Successfully completed an emergency image CDN provider switch days before our awards kickoff."
   ],
   "learnings": [
     "I learned the hardships of a small startup dependent upon continued funding."

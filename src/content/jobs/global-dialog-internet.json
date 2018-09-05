@@ -18,10 +18,18 @@
     "network": ["Apache","IIS"],
     "operatingSystem": ["BSDI","Windows NT","Windows 2000"]
   },
+  "description": "Managed the web hosting sales and marketing. Led development of all internal and customer facing apps.",
+  "responsibilities": [
+    "Managed web hosting sales, packaging, pricing and promotions.",
+    "Delivered seminars to developers on SEO and tracking methodologies.",
+    "Training of new telephone tech support personnel.",
+    "Liason with domain name registrars.",
+    "Business sales of ISDN and T1 Internet services."
+  ],
   "accomplishments": [
     "I used pricing and plans to double hosting revenue.",
     "I delivered SEO and traffic analysis seminars to web developers.",
-    "I wrote three major online apps for the company while still working in marketing."
+    "Developed three applications in ColdFusion, while learning ColdFusion."
   ],
   "learnings": [
     "How to move at Internet time.",

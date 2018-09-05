@@ -1,7 +1,7 @@
 {
   "name": "Joiner Associates, Inc",
   "location": "Madison, WI",
-  "site": "gdinet.com",
+  "site": "orielinc.com",
   "dates": {
     "start": "1994-06-01",
     "end": "1998-09-01"
@@ -13,19 +13,27 @@
     "testing": ["curl"],
     "data": ["DB2"],
     "deployment": ["Subversion","Shell"],
-    "tools": ["IRC"],
-    "ecommerce": ["iChains"],
-    "network": ["Netware"],
-    "operatingSystem": ["Windows NT","Netware","OS/2"]
+    "tools": ["email","chat"],
+    "ecommerce": [],
+    "network": ["Netware","Lotus Notes","Apple Talk","Access"],
+    "operatingSystem": ["Windows NT","Netware","OS/2","Apple"]
   },
+  "description": "Managed the web site and Internet connection. Provided LAN/WAN and desktop support; 40% remote.",
+  "responsibilities": [
+    "Managed web site infrastructure and deployments.",
+    "Implemented and supported company Internet gateway. ",
+    "Desktop application support for Windows and Mac users.",
+    "Planned network and system updates and migrations.",
+    "Data scrubbing and normalization of customer database."
+  ],
   "accomplishments": [
-    "I used pricing and plans to double hosting revenue.",
-    "I delivered SEO and traffic analysis seminars to web developers.",
-    "I wrote three major online apps for the company while still working in marketing."
+    "I created an early small business Internet email gateway, providing dedicated behavior over a dailup line.",
+    "I helped design, code and launch their first web site, joiner.com."
   ],
   "learnings": [
-    "How to move at Internet time.",
-    "Good software can be written quickly."
+    "This was an amazing opportunity to learn from some of the best minds in quality management.",
+    "The importance of change management not just as a technical process but as a human process as well.",
+    "I had the opportunity to learn data analysis from the creators and writers of Minitab."
   ],
-  "reasonLeft": "I left for a development-centric role with twice the pay of my marketing job."
+  "reasonLeft": "I wanted to work at an Internet focused company."
 }

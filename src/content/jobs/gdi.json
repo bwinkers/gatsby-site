@@ -18,12 +18,19 @@
     "network": ["Apache","IIS"],
     "operatingSystem": ["BSDI","Windows NT","Windows 2000"]
   },
+  "description": "Remotely managed the software development process and developers.",
+  "responsibilities": [
+    "Defined software requirements and priorities.",
+    "Staffing for development and technical support personnel.",
+    "Managed internal and remote developers."
+  ],
   "accomplishments": [
     "Rewrote three major applications in a eight month period."
   ],
   "learnings": [
     "I became adept at managing remote teams.",
-    "I learned the importance of all management having the same vision."
+    "I learned the importance of all management having the same vision.",
+    "Developed two PHP applications while learning PHP."
   ],
   "reasonLeft": "The owner sold the business to start a dairy farm."
 }

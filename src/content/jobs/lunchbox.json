@@ -18,11 +18,18 @@
     "network": ["Load Balancer","Autoscaling Groups","Bastion","VPC","Route 53","S3","CloudFront"],
     "operatingSystem": ["Ubuntu","Cloud"]
   },
+  "description": "Remote Node API development. Creatiing ES5 Swagger based API components.",
+  "responsibilities": [
+    "Worked tasks from a Jira board.",
+    "Wrote Swagger docs to support the API",
+    "Developed API tests using Mocha and Postman."
+  ],
   "accomplishments": [
+    "I finished a stalled ES5 Promise based API on time, while learning ES5 promise based programming.",
     "Finished the API project ontime by myself after my manager moved on."
   ],
   "learnings": [
-    "I enjoyed learning Promised based Javascript development as I went, it had been a while since I had to do that."
+    "I learned Promised based Javascript development as I went, it was comforting to know I could still quickly learn a new programming paradigm."
   ],
-  "reasonLeft": "My manager at Lunchbox left to manage at The Bouqs Co. and hired me away."
+  "reasonLeft": "My manager at Lunchbox left to manage at The Bouqs and asked me to follow him."
 }
