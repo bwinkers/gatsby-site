@@ -26,7 +26,6 @@ var Experience = function Experience(props) {
   return _react.default.createElement("div", {
     className: (0, _emotion.cx)(themeStyle, customStyle)
   }, _react.default.createElement("ul", null, items.map(function (item) {
-      console.log(item)
     return _react.default.createElement("li", {
       key: item.slug
     }, _react.default.createElement(_gatsby.Link, {
