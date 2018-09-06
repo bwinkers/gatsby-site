@@ -2,10 +2,8 @@
   "name": "Global Dialog Internet",
   "location": "Madison, WI",
   "site": "gdinet.com",
-  "dates": {
-    "start": "1998-09-01",
-    "end": "2000-11-01"
-  },
+  "start": "1998-09-01",
+  "end": "2000-11-01",
   "title": "Sales Executive",
   "slug": "global-dialog-internet",
   "stack" : {

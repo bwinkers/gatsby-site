@@ -2,10 +2,8 @@
   "name": "Global Dialog Internet",
   "location": "Madison, WI",
   "site": "gdinet.com",
-  "dates": {
-    "start": "2002-02-01",
-    "end": "2003-05-01"
-  },
+  "start": "2002-02-01",
+  "end": "2003-05-01",
   "title": "Software Development Manager",
   "slug": "gdi",
   "stack" : {
@@ -21,8 +19,9 @@
   "description": "Remotely managed the software development process and developers.",
   "responsibilities": [
     "Defined software requirements and priorities.",
-    "Staffing for development and technical support personnel.",
-    "Managed internal and remote developers."
+    "Staffing and training of the development and technical support personnel.",
+    "Managed internal and remote developers.",
+    "Managed the hosting infrastructure."
   ],
   "accomplishments": [
     "Rewrote three major applications in a eight month period."

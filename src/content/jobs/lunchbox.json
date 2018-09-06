@@ -2,10 +2,8 @@
   "name": "Lunchbox",
   "location": "Los Angeles, CA",
   "site": "firestart.me",
-  "dates": {
-    "start": "2014-10-01",
-    "end": "2015-12-01"
-  },
+  "start": "2014-10-01",
+  "end": "2015-12-01",
   "title": "Node Backend Developer",
   "slug": "lunchbox",
   "stack" : {

@@ -2,10 +2,8 @@
   "name": "The Art Commision",
   "location": "Madison, WI",
   "site": "codaworx.com",
-  "dates": {
-    "start": "2013-10-01",
-    "end": "2014-11-01"
-  },
+  "start": "2013-10-01",
+  "end": "2014-11-01",
   "title": "Director of IT",
   "slug": "codaworx",
   "stack" : {

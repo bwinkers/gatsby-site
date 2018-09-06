@@ -2,10 +2,8 @@
   "name": "WHEDA",
   "location": "Madison, WI",
   "site": "wheda.com",
-  "dates": {
-    "start": "2000-12-01",
-    "end": "2002-01-01"
-  },
+  "start": "2000-12-01",
+  "end": "2002-01-01",
   "title": "Web Analyst",
   "slug": "wheda",
   "stack" : {
@@ -26,7 +24,7 @@
     "Act as a liason with other state agency tech departments implementing iChains."
   ],
   "accomplishments": [
-    "I was able to get the WHEDA iChains implementation up in less than a year, other state agencies were on their second and third years for similar projects.",
+    "Completed the WHEDA iChains implementation in less than one year, other state agencies were on their second and third years for similar projects.",
     "The WHEDA iChains implentation became a model for other agencies."
   ],
   "learnings": [
