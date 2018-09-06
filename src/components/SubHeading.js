@@ -13,7 +13,7 @@ var _gatsby = require("gatsby");
 
 var _emotion = require("emotion");
 
-var _experience = _interopRequireDefault(require("../styles/experience"));
+var _experience = _interopRequireDefault(require("../styles/sub-heading"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -24,8 +24,13 @@ var SubHeading = function SubHeading(props) {
       _props$customStyle = props.customStyle,
       customStyle = _props$customStyle === void 0 ? '' : _props$customStyle;
   return _react.default.createElement("div", {
-    className: (0, _emotion.cx)(themeStyle, customStyle)
-  },  _react.default.createElement("h2", null, props.name));
+    className: (0, _emotion.cx)(themeStyle, customStyle),
+  },_react.default.createElement("div", {className: "bottomed"}, 
+    _react.default.createElement("span", {className: "company"}, props.name), 
+    _react.default.createElement("span", {className: "location"}, props.location),
+    _react.default.createElement("p", {className: "clear"}, null) 
+)
+  );
 };
 
 SubHeading.propTypes = {

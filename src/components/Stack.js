@@ -25,10 +25,9 @@ var Stack = function Stack(props) {
       _props$customStyle = props.customStyle,
       customStyle = _props$customStyle === void 0 ? '' : _props$customStyle;
 
-  var stuff = '<b>hello</b>';
   return _react.default.createElement("div", {
     className: (0, _emotion.cx)(themeStyle, customStyle)
-  }, stuff);
+  });
 };
 
 Stack.propTypes = {
