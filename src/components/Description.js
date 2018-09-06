@@ -26,7 +26,7 @@ var Description = function Description(props) {
       customStyle = _props$customStyle === void 0 ? '' : _props$customStyle;
   return _react.default.createElement("div", {
     className: (0, _emotion.cx)(themeStyle, customStyle)
-  },  _react.default.createElement("div", null, props.description));
+  },  _react.default.createElement("p", null, props.description));
 };
 
 Description.propTypes = {
