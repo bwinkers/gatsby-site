@@ -51,13 +51,6 @@ const ExperiencePage = props => {
       <Article>
         <Experience items={experiences} />
       </Article>
-      <Footer links={footerLinksHTML} copyright={copyrightHTML} />
-      <Seo
-        url={siteUrl}
-        language={siteLanguage}
-        title={siteTitle}
-        description={siteDescription}
-      />
     </Layout>
   );
 };
@@ -66,16 +59,14 @@ export default ExperiencePage;
 
 export const query = graphql`
   query {
-    experiences: allJobsJson {
+    experiences: allJobsJson (sort: {fields: start, order: DESC}){
       edges {
         node  {
           site
           slug
           name
-          dates {
-            start
-            end
-          }
+          start
+          end
           title
         }
       }

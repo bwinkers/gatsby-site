@@ -40,13 +40,7 @@ const IndexPage = props => {
         <Menu items={menuItems} />
       </Header>
       <Hero html={heroHTML} />
-      <Footer links={footerLinksHTML} copyright={copyrightHTML} />
-      <Seo
-        url={siteUrl}
-        language={siteLanguage}
-        title={siteTitle}
-        description={siteDescription}
-      />
+
     </Layout>
   );
 };
