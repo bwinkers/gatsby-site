@@ -121,16 +121,15 @@ exports.createPages = ({ graphql, actions }) => {
                     site
                     slug
                     name
+                    location
                     description
                     responsibilities
                     accomplishments
                     learnings
                     reasonLeft
                     stack { network }
-                    dates {
-                      start
-                      end
-                    }
+                    start
+                    end
                     title
                   }
                 }
@@ -150,14 +149,15 @@ exports.createPages = ({ graphql, actions }) => {
               const slug = '/experience/' + node.slug;
               const name = node.name;
               const site = node.site;
+              const location = node.location;
               const title = node.title;
               const description = node.description;
               const responsibilities = node.responsibilities;
               const accomplishments = node.accomplishments;
               const learnings = node.learnings;
               const reasonLeft = node.reasonLeft;
-              const start = node.dates.start;
-              const end = node.dates.end;
+              const start = node.start;
+              const end = node.end;
               const stack = node.stack;
               const next = index === 0 ? undefined : experiences[index - 1].node;
               const prev =
@@ -166,6 +166,7 @@ exports.createPages = ({ graphql, actions }) => {
               const context = {
                   slug,
                   name,
+                  location,
                   site,
                   title,
                   description,
@@ -191,11 +192,7 @@ exports.createPages = ({ graphql, actions }) => {
           
         ]
       )
-      
-       
-        
-        
-        
+
     );
   });
 };
