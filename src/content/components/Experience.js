@@ -13,6 +13,8 @@ var _gatsby = require("gatsby");
 
 var _emotion = require("emotion");
 
+var _moment = require("moment");
+
 var _experience = _interopRequireDefault(require("../../styles/experience"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -30,7 +32,16 @@ var Experience = function Experience(props) {
       key: item.slug
     }, _react.default.createElement(_gatsby.Link, {
       to: '/experience/' + item.slug
-    }, _react.default.createElement("h3", null, item.title), _react.default.createElement("p", null, 'excerpt')));
+    }, _react.default.createElement("h3", null, item.title),
+    _react.default.createElement("div", {style: {display:"flex", height:"100%"}}, 
+      _react.default.createElement("span", {style: { float:"left", "font-size": "1.2em", "font-weight": "bold", "align-self": "flex-end"}}, item.name),
+
+      _react.default.createElement("span", {style: {"align-self": "flex-end","margin-left": "auto", "font-size": "1.1em"}}, item.location),
+      _react.default.createElement("span", {style: { "margin-left": "auto",  "align-self": "flex-end", "font-weight": "bold"}}, _moment(item.start, 'YYYY-MM-DD').format('MMM YYYY') + ' to ' + _moment(item.end, 'YYYY-MM-DD').format('MMM YYYY')),
+      _react.default.createElement("p", {style: { clear:"both"}}, null)
+  )),
+    _react.default.createElement("div", {style: { "font-size": "1.2em", "margin-top": "5px"}}, item.description)
+  );
   })));
 };
 
