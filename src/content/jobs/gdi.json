@@ -1,6 +1,6 @@
 {
   "name": "Global Dialog Internet",
-  "location": "Madison, WI",
+  "location": "Madison, WI (remote)",
   "site": "gdinet.com",
   "start": "2002-02-01",
   "end": "2003-05-01",
@@ -16,7 +16,7 @@
     "network": ["Apache","IIS"],
     "operatingSystem": ["BSDI","Windows NT","Windows 2000"]
   },
-  "description": "Remotely managed the software development process and developers.",
+  "description": "Managed the software development process and developers. 100% remote.",
   "responsibilities": [
     "Defined software requirements and priorities.",
     "Staffing and training of the development and technical support personnel.",

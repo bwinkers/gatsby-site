@@ -1,0 +1,23 @@
+{
+  "name": "Bewko, Inc.",
+  "location": "Madison, WI",
+  "site": "bewko.com",
+  "start": "1988-02-01",
+  "end": "1990-04-01",
+  "title": "Business Owner",
+  "slug": "bewko",
+  "description": "Managed a small mail-order business selling environemntally safe products.",
+  "responsibilities": [
+    "Created the catalog and marketing material.",
+    "Vendor sourcing and relations.",
+    "Accounting and tax filings."
+  ],
+  "accomplishments": [
+    "Started with nothing and closed up shop not owing anyone.",
+    "Sponsored trade trips to Russia and China to source new products."
+  ],
+  "learnings": [
+    "The complexities of business in the real world."
+  ],
+  "reasonLeft": "I wasn't making much money and didn't have capital to expand my marketing. At the time I didn't understand all the options to finance growth."
+}
