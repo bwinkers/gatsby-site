@@ -1,6 +1,6 @@
 {
   "name": "The Bouqs Co.",
-  "location": "Marina del Rey, CA",
+  "location": "Marina del Rey, CA (remote)",
   "site": "bouqs.com",
   "start": "2016-01-01",
   "end": "2018-09-04",
@@ -16,7 +16,7 @@
     "network": ["Load Balancer","Autoscaling Groups","IAM", "Docker", "Bastion","VPC","Route 53","S3","CloudFront", "Apache","Nginx"],
     "operatingSystem": ["Ubuntu","Debian","RightScale","Alpine Linux","Cloud"]
   },
-  "description": "Remote PHP and Node API development. Creating AWS based automated testing and deployment systems.",
+  "description": "Node and PHP API development. Creating AWS based automated testing and deployment systems. 95% remote with occasional office meetings.",
   "responsibilities": [
     "Define API endpoints and architecture.",
     "Identify security requirements for API and backend services.",

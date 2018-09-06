@@ -1,0 +1,24 @@
+{
+  "name": "Restaurant Management",
+  "location": "Madison, WI",
+  "site": "littlevillagecafe.com",
+  "start": "1990-05-01",
+  "end": "1993-04-01",
+  "title": "Line Chef, General Manager",
+  "slug": "restaurants",
+  "description": "Created menus, daily specials and soups. Managed back staff.",
+  "responsibilities": [
+    "Created daily soups and specials.",
+    "Inventory managemnt and ordering.",
+    "Interviewing, hiring and firing of back staff."
+  ],
+  "accomplishments": [
+    "Doubled the sales of daily specials.",
+    "Increased the sales of daily specials from under 10% to over 30% of daily sales."
+  ],
+  "learnings": [
+    "Thrilling people with food is extremely rewarding.",
+    "I learned how to organize a great number of things in my head in real time."
+  ],
+  "reasonLeft": "One day after dicing 50 pounds of onions in a 100 degree kitchen I decided I wnated something in an air conditioned office."
+}

@@ -1,6 +1,6 @@
 {
   "name": "Lunchbox",
-  "location": "Los Angeles, CA",
+  "location": "Los Angeles, CA (remote)",
   "site": "firestart.me",
   "start": "2014-10-01",
   "end": "2015-12-01",
@@ -16,7 +16,7 @@
     "network": ["Load Balancer","Autoscaling Groups","Bastion","VPC","Route 53","S3","CloudFront"],
     "operatingSystem": ["Ubuntu","Cloud"]
   },
-  "description": "Remote Node API development. Creatiing ES5 Swagger based API components.",
+  "description": "Node API development. Creatiing ES5 Swagger based API components. 100% remote.",
   "responsibilities": [
     "Worked tasks from a Jira board.",
     "Wrote Swagger docs to support the API",

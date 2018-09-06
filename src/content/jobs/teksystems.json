@@ -1,0 +1,34 @@
+{
+  "name": "Tekystems",
+  "location": "Madison, WI",
+  "site": "www.teksystems.com",
+  "start": "1993-05-01",
+  "end": "1994-04-01",
+  "title": "Cisco Technician",
+  "slug": "teksystems",
+  "stack" : {
+    "programming": ["Cisco IOS","Perl"],
+    "testing": ["telnet"],
+    "data": ["Excel"],
+    "deployment": ["telnet"],
+    "tools": ["chat"],
+    "ecommerce": ["Card swipe"],
+    "network": ["T1","Frame Relay","ISDN","NetWare","Banyan Vines","AppleTalk"],
+    "operatingSystem": ["Cisco","Windows","Apple"]
+  },
+  "description": "Installing and managing routers for the State of Wisconsin Court System. (KIDS Network)",
+  "responsibilities": [
+    "Installed routers in every county courthouse.",
+    "Managed Cisco routers remotely and provided on site support as needed.",
+    "Managed warehouse computer builds.",
+    "Laptop and server repair in house and on customer premises.",
+    "Backup system installation and configuration."
+  ],
+  "accomplishments": [
+    "Improved warehouse computer build output 400%."
+  ],
+  "learnings": [
+    "You can move up up quick if you put the effort in."
+  ],
+  "reasonLeft": "I left for better opportunities to be mentored at Joiner Associates."
+}

@@ -1,5 +1,5 @@
 {
-  "name": "TDS",
+  "name": "TDS - Telephone Data Systems",
   "location": "Madison, WI",
   "site": "tdstelecom.com",
   "start": "2003-05-01",
@@ -16,7 +16,7 @@
     "network": ["Apache"],
     "operatingSystem": ["Redhat","Solaris"]
   },
-  "description": "Sole developer on the PHP version of the DSL order form Perl mass mail application. ",
+  "description": "Sole developer on the PHP version of the DSL order form and created a mass mail application in Perl.",
   "responsibilities": [
     "Provide all support for a DSL order process written in PHP.",
     "Managing a mass mail scheduler I wrote in Perl.",
@@ -25,7 +25,7 @@
   ],
   "accomplishments": [
     "Developed a USP Worldship integration in 3 weeks by myself, the Java team took  3 months.",
-    "Designed and wrote a mass mail application in Perl that combined UI, API and a complex scheduler.s"
+    "Designed and wrote a mass mail application in Perl that combined UI, API and a complex scheduler."
   ],
   "learnings": [
     "I picked up a number of good code review habits.",

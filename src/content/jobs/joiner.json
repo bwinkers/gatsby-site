@@ -4,7 +4,7 @@
   "site": "orielinc.com",
   "start": "1994-06-01",
   "end": "1998-09-01",
-  "title": "Webmaster & Network Technician",
+  "title": "Webmaster",
   "slug": "joiner",
   "stack" : {
     "programming": ["HTML"],
@@ -16,7 +16,7 @@
     "network": ["Netware","Lotus Notes","Apple Talk","Access"],
     "operatingSystem": ["Windows NT","Netware","OS/2","Apple"]
   },
-  "description": "Managed the web site and Internet connection. Provided LAN/WAN and desktop support; 40% remote.",
+  "description": "Managed the web site and Internet connection. Provided LAN/WAN and desktop support. 20% remote.",
   "responsibilities": [
     "Managed web site infrastructure and deployments.",
     "Implemented and supported company Internet gateway. ",

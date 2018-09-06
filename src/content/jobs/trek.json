@@ -16,7 +16,7 @@
     "network": ["Load Balancer","Lightspeed CDN","Adobe Cloud9"],
     "operatingSystem": ["Redhat","CentOS"]
   },
-  "description": "Led the development of the customer facing web sites. The framework I wrote powered their sites for six years.",
+  "description": "Led the development of the customer facing web sites. The framework I wrote powered their sites for six years. 20% remote.",
   "responsibilities": [
     "Provide all support for a DSL order process written in PHP.",
     "Managing a mass mail scheduler I wrote in Perl.",

@@ -1,26 +1,15 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import CalendarIcon from 'react-feather/dist/icons/calendar';
-import UserIcon from 'react-feather/dist/icons/user';
-import TagIcon from 'react-feather/dist/icons/tag';
-
 import Article from '@react-website-themes/default/components/Article';
 import Experience from 'content/components/Experience';
 import Branding from '@react-website-themes/default/components/Branding';
-import Footer from '@react-website-themes/default/components/Footer';
 import Header from '@react-website-themes/default/components/Header';
-import Blog from '@react-website-themes/default/components/Blog';
 import Layout from '@react-website-themes/default/components/Layout';
 import Menu from '@react-website-themes/default/components/Menu';
-import Seo from '@react-website-themes/default/components/Seo';
 
 import config from 'content/meta/config';
 import menuItems from 'content/meta/menu';
-
-const metaIcons = {
-  calendar: CalendarIcon
-};
 
 const ExperiencePage = props => {
   const {
@@ -49,6 +38,7 @@ const ExperiencePage = props => {
         <Menu items={menuItems} />
       </Header>
       <Article>
+       <h1>Experience</h1>
         <Experience items={experiences} />
       </Article>
     </Layout>
@@ -68,6 +58,8 @@ export const query = graphql`
           start
           end
           title
+          description
+          location
         }
       }
     }
