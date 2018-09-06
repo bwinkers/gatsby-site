@@ -27,7 +27,7 @@ var EmploymentDates = function EmploymentDates(props) {
       customStyle = _props$customStyle === void 0 ? '' : _props$customStyle;
   return _react.default.createElement("div", {
     className: (0, _emotion.cx)(themeStyle, customStyle)
-  },  _react.default.createElement("div", null, _moment(props.start, 'YYYY-MM-DD').format('MMM YYYY'), ' to ', _moment(props.end, 'YYYY-MM-DD').format('MMM YYYY')));
+  },  _react.default.createElement("p", null, _moment(props.start, 'YYYY-MM-DD').format('MMM YYYY'), ' to ', _moment(props.end, 'YYYY-MM-DD').format('MMM YYYY')));
 };
 
 EmploymentDates.propTypes = {
