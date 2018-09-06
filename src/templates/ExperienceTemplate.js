@@ -29,6 +29,7 @@ import Heading from 'components/Heading';
 import SubHeading from 'components/SubHeading';
 import EmploymentDates from 'components/EmploymentDates';
 import Description from 'components/Description';
+import ListSection from 'components/ListSection';
 import Stack from 'components/Stack';
 
 import CalendarIcon from 'react-feather/dist/icons/calendar';
@@ -56,11 +57,15 @@ const ExperienceTemplate = props => {
       pageContext: { 
         name,
         title,
+        location,
         site,
         start,
         end,
         description,
         responsibilities,
+        accomplishments,
+        learnings,
+        reasonLeft,
         stack,
         next,
         prev 
@@ -76,7 +81,7 @@ const ExperienceTemplate = props => {
     siteLanguage,
     siteTitlePostfix,
   } = config;
-console.log(stack)
+console.log(location)
   return (
     <Layout>
       <Header>
@@ -85,11 +90,12 @@ console.log(stack)
       </Header> 
       <Article>
         <Heading title={title} />
-        <SubHeading name={name} />
-        <EmploymentDates start={start} end={end} />
+        <SubHeading name={name} location={location} />
         <Description description={description} />
-        <Responsibilities responsibilities={responsibilities} />
-        <Stack stack={stack} />
+        <EmploymentDates start={start} end={end} />
+        <ListSection data={accomplishments} name="Accomplishments" />
+        <ListSection data={responsibilities} name="Responsibilities" />
+        <ListSection data={learnings} name="Learnings" />
         <NextPrev next={next} prev={prev} icons={nextPrevIcons} />
       </Article>
     </Layout>

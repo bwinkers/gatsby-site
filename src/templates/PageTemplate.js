@@ -9,7 +9,7 @@ import '@react-website-themes/default/styles/global';
 import Article from '@react-website-themes/default/components/Article';
 import Bodytext from '@react-website-themes/default/components/Bodytext';
 import Branding from '@react-website-themes/default/components/Branding';
-import Footer from '@react-website-themes/default/components/Footer';
+
 import Header from '@react-website-themes/default/components/Header';
 import Heading from '@react-website-themes/default/components/Heading';
 import Layout from '@react-website-themes/default/components/Layout';
@@ -27,9 +27,7 @@ const PageTemplate = props => {
         frontmatter: { title },
         fields: { slug },
         excerpt,
-      },
-      footerLinks: { html: footerLinksHTML },
-      copyright: { html: copyrightHTML },
+      }
     },
   } = props;
 
@@ -52,13 +50,6 @@ const PageTemplate = props => {
         <Heading title={title} />
         <Bodytext html={pageHTML} />
       </Article>
-      <Footer links={footerLinksHTML} copyright={copyrightHTML} />
-      <Seo
-        url={`${siteUrl}${slug}`}
-        language={siteLanguage}
-        title={`${title}${siteTitlePostfix}`}
-        description={excerpt}
-      />
     </Layout>
   );
 };
@@ -84,16 +75,6 @@ export const query = graphql`
         title
         categories
       }
-    }
-    footerLinks: markdownRemark(
-      fileAbsolutePath: { regex: "/content/parts/footerLinks/" }
-    ) {
-      html
-    }
-    copyright: markdownRemark(
-      fileAbsolutePath: { regex: "/content/parts/copyright/" }
-    ) {
-      html
     }
   }
 `;
