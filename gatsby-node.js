@@ -63,54 +63,7 @@ exports.createPages = ({ graphql, actions }) => {
       
       Promise.all(
         [
-          graphql(`
-            {
-              allMarkdownRemark(
-                filter: { fields: { slug: { ne: null } } }
-                sort: { fields: [fields___prefix], order: DESC }
-                limit: 1000
-              ) {
-                edges {
-                  node {
-                    fileAbsolutePath
-                    fields {
-                      slug
-                      prefix
-                      source
-                    }
-                    frontmatter {
-                      title
-                      categories
-                    }
-                  }
-                }
-              }
-            }
-          `).then(result => {
-            if (result.errors) {
-              console.log(result.errors);
-              reject(result.errors);
-            }
-
-            const items = result.data.allMarkdownRemark.edges;
-
-            // create pages
-            const pages = items.filter(item => item.node.fields.source === 'pages');
-            pages.forEach(({ node }) => {
-              const slug = node.fields.slug;
-              const source = node.fields.source;
-
-              createPage({
-                path: slug,
-                component: pageTemplate,
-                context: {
-                  slug,
-                  source,
-                },
-              });
-            });
-          }),
-          
+                   
           // JSON data
           
           graphql(`
