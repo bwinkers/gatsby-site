@@ -15,7 +15,7 @@ var _gatsby = require("gatsby");
 
 var _emotion = require("emotion");
 
-var _experience = _interopRequireDefault(require("../styles/description"));
+var _experience = _interopRequireDefault(require("../styles/list-section"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

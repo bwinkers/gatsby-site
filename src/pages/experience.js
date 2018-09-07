@@ -38,7 +38,7 @@ const ExperiencePage = props => {
         <Menu items={menuItems} />
       </Header>
       <Article>
-       <h1>Experience</h1>
+       <h1 className="pageHead">Experience</h1>
         <Experience items={experiences} />
       </Article>
     </Layout>

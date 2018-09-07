@@ -8,7 +8,7 @@ exports.default = void 0;
 var _emotion = require("emotion");
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  p { font-weight: bold ; font-style: italic } \n"]);
+  var data = _taggedTemplateLiteral(["\n  p { font-weight: bold ; font-style: italic; margin: .5em 0;} \n"]);
 
   _templateObject = function _templateObject() {
     return data;

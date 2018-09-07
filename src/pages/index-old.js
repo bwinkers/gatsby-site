@@ -1,26 +1,28 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import Article from '@react-website-themes/default/components/Article';
-import Experience from 'content/components/Experience';
+import '@react-website-themes/default/styles/variables';
+import '@react-website-themes/default/styles/global';
+
 import Branding from '@react-website-themes/default/components/Branding';
+import Footer from '@react-website-themes/default/components/Footer';
 import Header from '@react-website-themes/default/components/Header';
+import Hero from '@react-website-themes/default/components/Hero';
 import Layout from '@react-website-themes/default/components/Layout';
 import Menu from '@react-website-themes/default/components/Menu';
+import Seo from '@react-website-themes/default/components/Seo';
 
 import config from 'content/meta/config';
 import menuItems from 'content/meta/menu';
 
-const ExperiencePage = props => {
+const IndexPage = props => {
   const {
     data: {
-      experiences: { edges },
       footerLinks: { html: footerLinksHTML },
+      hero: { html: heroHTML },
       copyright: { html: copyrightHTML },
     },
   } = props;
-
-  const experiences = edges.map(edge => edge.node);
 
   const {
     headerTitle,
@@ -37,31 +39,18 @@ const ExperiencePage = props => {
         <Branding title={headerTitle} subTitle={headerSubTitle} />
         <Menu items={menuItems} />
       </Header>
-      <Article>
-       <h1 style={{"margin-bottom": ".5em"}}>Experience</h1>
-        <Experience items={experiences} />
-      </Article>
+      <Hero html={heroHTML} />
+
     </Layout>
   );
 };
 
-export default ExperiencePage;
+export default IndexPage;
 
 export const query = graphql`
   query {
-    experiences: allJobsJson (sort: {fields: start, order: DESC}){
-      edges {
-        node  {
-          site
-          slug
-          name
-          start
-          end
-          title
-          description
-          location
-        }
-      }
+    hero: markdownRemark(fileAbsolutePath: { regex: "/content/parts/hero/" }) {
+      html
     }
     footerLinks: markdownRemark(
       fileAbsolutePath: { regex: "/content/parts/footerLinks/" }

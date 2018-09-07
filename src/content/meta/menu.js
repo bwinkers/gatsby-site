@@ -4,8 +4,7 @@ import InfoIcon from 'react-feather/dist/icons/info';
 import BlogIcon from 'react-feather/dist/icons/book';
 
 const menu = [
-  { label: 'Home', to: '/', icon: HomeIcon },
-  { label: 'Experience', to: '/experience', icon: BlogIcon }
+  { label: 'Experience', to: '/', icon: BlogIcon }
 ];
 
 export default menu;

@@ -16,7 +16,7 @@
     "network": ["Apache"],
     "operatingSystem": ["Redhat","Solaris"]
   },
-  "description": "Sole developer on the PHP version of the DSL order form and created a mass mail application in Perl.",
+  "description": "Lead developer on the PHP version of the DSL order form and created a mass mail application in Perl.",
   "responsibilities": [
     "Provide all support for a DSL order process written in PHP.",
     "Managing a mass mail scheduler I wrote in Perl.",
